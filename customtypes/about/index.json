@@ -25,6 +25,9 @@
             },
             "footer": {
               "type": "SharedSlice"
+            },
+            "about_content": {
+              "type": "SharedSlice"
             }
           }
         }

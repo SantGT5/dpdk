@@ -24,7 +24,7 @@ interface AboutDocumentData {
  * Slice for *AboutPage → Slice Zone*
  *
  */
-type AboutDocumentDataSlicesSlice = NavSlice | HeroSlice | FooterSlice;
+type AboutDocumentDataSlicesSlice = NavSlice | HeroSlice | FooterSlice | AboutContentSlice;
 /**
  * AboutPage document from Prismic
  *
@@ -94,6 +94,85 @@ type ContactDocumentDataSlicesSlice = NavSlice | HeroSlice | FooterSlice;
  */
 export type ContactDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<ContactDocumentData>, "contact", Lang>;
 export type AllDocumentTypes = AboutDocument | ArticlesDocument | ContactDocument;
+/**
+ * Primary content in AboutContent → Primary
+ *
+ */
+interface AboutContentSliceDefaultPrimary {
+    /**
+     * Description field in *AboutContent → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about_content.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    description: prismicT.KeyTextField;
+    /**
+     * Img field in *AboutContent → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about_content.primary.aboutimg
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    aboutimg: prismicT.ImageField<never>;
+    /**
+     * ImgDesc field in *AboutContent → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about_content.primary.imgdesc
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    imgdesc: prismicT.KeyTextField;
+    /**
+     * Quote field in *AboutContent → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about_content.primary.quote
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    quote: prismicT.KeyTextField;
+    /**
+     * Text field in *AboutContent → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about_content.primary.text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    text: prismicT.KeyTextField;
+}
+/**
+ * Default variation for AboutContent Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `AboutContent`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutContentSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<AboutContentSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *AboutContent*
+ *
+ */
+type AboutContentSliceVariation = AboutContentSliceDefault;
+/**
+ * AboutContent Shared Slice
+ *
+ * - **API ID**: `about_content`
+ * - **Description**: `AboutContent`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutContentSlice = prismicT.SharedSlice<"about_content", AboutContentSliceVariation>;
 /**
  * Primary content in Footer → Primary
  *
@@ -357,6 +436,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutDocumentData, AboutDocumentDataSlicesSlice, AboutDocument, ArticlesDocumentData, ArticlesDocumentDataSlicesSlice, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, AllDocumentTypes, FooterSliceDefaultPrimary, FooterSliceDefault, FooterSliceVariation, FooterSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceVariation, HeroSlice, NavSliceDefaultPrimary, NavSliceDefaultItem, NavSliceDefault, NavSliceVariation, NavSlice, StoriesListSliceDefaultItem, StoriesListSliceDefault, StoriesListSliceVariation, StoriesListSlice };
+        export type { AboutDocumentData, AboutDocumentDataSlicesSlice, AboutDocument, ArticlesDocumentData, ArticlesDocumentDataSlicesSlice, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, AllDocumentTypes, AboutContentSliceDefaultPrimary, AboutContentSliceDefault, AboutContentSliceVariation, AboutContentSlice, FooterSliceDefaultPrimary, FooterSliceDefault, FooterSliceVariation, FooterSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceVariation, HeroSlice, NavSliceDefaultPrimary, NavSliceDefaultItem, NavSliceDefault, NavSliceVariation, NavSlice, StoriesListSliceDefaultItem, StoriesListSliceDefault, StoriesListSliceVariation, StoriesListSlice };
     }
 }

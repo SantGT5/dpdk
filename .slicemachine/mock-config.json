@@ -13,6 +13,11 @@
         "items": {}
       }
     },
-    "Footer": {}
+    "Footer": {},
+    "AboutContent": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }
