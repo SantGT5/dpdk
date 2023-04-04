@@ -1,0 +1,18 @@
+{
+  "_cts": {
+    "articles": {},
+    "about": {},
+    "contact": {}
+  },
+  "slices": {
+    "Nav": {},
+    "Hero": {},
+    "StoriesList": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "Footer": {}
+  }
+}
