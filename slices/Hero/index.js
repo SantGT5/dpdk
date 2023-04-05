@@ -1,6 +1,4 @@
 import React from "react";
-import { PrismicRichText } from "@prismicio/react";
-
 import { RichText } from "../../components";
 
 import Image from "next/image";
@@ -14,7 +12,7 @@ const Hero = ({ slice }) => (
   <section>
     <div className="flex justify-center container">
       <div className="text-center grid max-w-lg grid-cols-1 justify-items-center gap-5">
-        <div className="h-40 w-40 overflow-hidden rounded-full">
+        <div className="overflow-hidden rounded-full">
           {slice?.items?.map((item, i) => {
             return (
               <Image

@@ -2,11 +2,11 @@ import React from "react";
 
 type InputType = {
   className?: string;
-  name: string
-  label?: string
-  placeholder?: string
+  name: string;
+  label?: string;
+  placeholder?: string;
   required?: boolean;
-  labelClassName?: string
+  labelClassName?: string;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 

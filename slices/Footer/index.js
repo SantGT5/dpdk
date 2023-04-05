@@ -11,7 +11,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 const Footer = ({ slice }) => (
   <section>
     <div className="container">
-      <div className="text-center flex flex-col gap-4 mx-auto w-full max-w-xl">
+      <div className="text-center flex flex-col gap-4 width-full max-w-xl">
         <RichText className="text-4xl font-bold" field={slice.primary.title} />
         <RichText
           className="italic text-gray-600 py-5"

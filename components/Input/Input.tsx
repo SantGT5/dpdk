@@ -7,7 +7,7 @@ export default function Input({
   name,
   label,
   placeholder,
-  labelClassName
+  labelClassName,
 }: InputType) {
   const labelHandler = () => {
     if (!label) return <></>;

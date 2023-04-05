@@ -7,5 +7,9 @@
 }
 
 .input-contact {
-  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-3
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-3;
+}
+
+.width-full {
+  @apply mx-auto w-full
 }

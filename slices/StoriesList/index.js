@@ -9,7 +9,7 @@ import Image from "next/image";
 const StoriesList = ({ slice }) => (
   <section>
     <div className="container">
-      <div className="mx-auto w-full max-w-5xl">
+      <div className="width-full max-w-5xl">
         <ul className="grid grid-cols-1 gap-16">
           {slice?.items?.map((item, i) => {
             return (
@@ -22,6 +22,7 @@ const StoriesList = ({ slice }) => (
                   height={500}
                   src={item.storyimg.url}
                   alt="Story img"
+                  priority={true}
                 />
                 <div className="grid grid-cols-1 gap-3 md:col-span-2">
                   <h1 className="text-4xl font-bold">{item.title}</h1>

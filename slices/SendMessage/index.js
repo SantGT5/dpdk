@@ -18,7 +18,7 @@ const SendMessage = ({ slice }) => {
     <section>
       <form onSubmit={submitHandler}>
         <div className="container text-gray-600">
-          <div className="flex flex-col gap-4 mx-auto w-full max-w-3xl">
+          <div className="flex flex-col gap-4 width-full max-w-3xl">
             <Input
               className="input-contact"
               name="name"

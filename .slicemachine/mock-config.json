@@ -5,7 +5,11 @@
     "contact": {}
   },
   "slices": {
-    "Nav": {},
+    "Nav": {
+      "default": {
+        "primary": {}
+      }
+    },
     "Hero": {},
     "StoriesList": {
       "default": {

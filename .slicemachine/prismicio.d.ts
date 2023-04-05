@@ -288,32 +288,6 @@ type HeroSliceVariation = HeroSliceDefault;
  */
 export type HeroSlice = prismicT.SharedSlice<"hero", HeroSliceVariation>;
 /**
- * Primary content in Nav → Primary
- *
- */
-interface NavSliceDefaultPrimary {
-    /**
-     * Title field in *Nav → Primary*
-     *
-     * - **Field Type**: Title
-     * - **Placeholder**: This is where it all begins...
-     * - **API ID Path**: nav.primary.title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.TitleField;
-    /**
-     * Description field in *Nav → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: nav.primary.description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    description: prismicT.RichTextField;
-}
-/**
  * Item in Nav → Items
  *
  */
@@ -347,7 +321,7 @@ export interface NavSliceDefaultItem {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type NavSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<NavSliceDefaultPrimary>, Simplify<NavSliceDefaultItem>>;
+export type NavSliceDefault = prismicT.SharedSliceVariation<"default", Record<string, never>, Simplify<NavSliceDefaultItem>>;
 /**
  * Slice variation for *Nav*
  *
@@ -475,6 +449,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutDocumentData, AboutDocumentDataSlicesSlice, AboutDocument, ArticlesDocumentData, ArticlesDocumentDataSlicesSlice, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, AllDocumentTypes, AboutContentSliceDefaultPrimary, AboutContentSliceDefault, AboutContentSliceVariation, AboutContentSlice, FooterSliceDefaultPrimary, FooterSliceDefault, FooterSliceVariation, FooterSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceVariation, HeroSlice, NavSliceDefaultPrimary, NavSliceDefaultItem, NavSliceDefault, NavSliceVariation, NavSlice, SendMessageSliceDefaultPrimary, SendMessageSliceDefault, SendMessageSliceVariation, SendMessageSlice, StoriesListSliceDefaultItem, StoriesListSliceDefault, StoriesListSliceVariation, StoriesListSlice };
+        export type { AboutDocumentData, AboutDocumentDataSlicesSlice, AboutDocument, ArticlesDocumentData, ArticlesDocumentDataSlicesSlice, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, AllDocumentTypes, AboutContentSliceDefaultPrimary, AboutContentSliceDefault, AboutContentSliceVariation, AboutContentSlice, FooterSliceDefaultPrimary, FooterSliceDefault, FooterSliceVariation, FooterSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceVariation, HeroSlice, NavSliceDefaultItem, NavSliceDefault, NavSliceVariation, NavSlice, SendMessageSliceDefaultPrimary, SendMessageSliceDefault, SendMessageSliceVariation, SendMessageSlice, StoriesListSliceDefaultItem, StoriesListSliceDefault, StoriesListSliceVariation, StoriesListSlice };
     }
 }
