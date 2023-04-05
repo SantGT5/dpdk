@@ -49,6 +49,8 @@ $ npm run slicemachine
 ```
 This will start the slice machine on `localhost:9999`.
 
+<img width="570" alt="Screenshot 2023-04-05 at 23 40 03" src="https://user-images.githubusercontent.com/83282533/230218305-a5e66064-59d1-46f1-815a-58a12eebf89c.png">
+
 ## Available Scripts
 
 - **`$ npm run dev`** start dev mode
