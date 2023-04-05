@@ -1,5 +1,5 @@
-import React from "react";
-import { PrismicLink } from "@prismicio/react";
+import React from 'react';
+import { PrismicLink } from '@prismicio/react';
 
 /**
  * @typedef {import("@prismicio/client").Content.NavSlice} NavSlice
@@ -7,15 +7,18 @@ import { PrismicLink } from "@prismicio/react";
  * @param { NavProps }
  */
 const Nav = ({ slice }) => (
-  <section className="container">
-    <div className="flex flex-wrap justify-center gap-10  ">
-      {slice?.items?.map((item, i) => (
-        <PrismicLink key={i} className="font-semibold tracking-tight text-slate-800" field={item.link}>
-          {item.label}
-        </PrismicLink>
-      ))}
-    </div>
-  </section>
+    <section className="container">
+        <div className="flex flex-wrap justify-center gap-10  ">
+            {slice?.items?.map((item, i) => (
+                <PrismicLink
+                    key={i}
+                    className="font-semibold tracking-tight text-slate-800"
+                    field={item.link}>
+                    {item.label}
+                </PrismicLink>
+            ))}
+        </div>
+    </section>
 );
 
 export default Nav;

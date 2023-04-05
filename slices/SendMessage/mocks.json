@@ -1,19 +1,19 @@
 [
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "default",
-    "primary": {
-      "text": {
-        "__TYPE__": "FieldContent",
-        "value": "fat",
-        "type": "Text"
-      }
-    },
-    "items": [
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": []
-      }
-    ]
-  }
+    {
+        "__TYPE__": "SharedSliceContent",
+        "variation": "default",
+        "primary": {
+            "text": {
+                "__TYPE__": "FieldContent",
+                "value": "fat",
+                "type": "Text"
+            }
+        },
+        "items": [
+            {
+                "__TYPE__": "GroupItemContent",
+                "value": []
+            }
+        ]
+    }
 ]

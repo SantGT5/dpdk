@@ -1,32 +1,32 @@
 {
-  "_cts": {
-    "articles": {},
-    "about": {},
-    "contact": {}
-  },
-  "slices": {
-    "Nav": {
-      "default": {
-        "primary": {}
-      }
+    "_cts": {
+        "articles": {},
+        "about": {},
+        "contact": {}
     },
-    "Hero": {},
-    "StoriesList": {
-      "default": {
-        "primary": {},
-        "items": {}
-      }
-    },
-    "Footer": {},
-    "AboutContent": {
-      "default": {
-        "primary": {}
-      }
-    },
-    "SendMessage": {
-      "default": {
-        "primary": {}
-      }
+    "slices": {
+        "Nav": {
+            "default": {
+                "primary": {}
+            }
+        },
+        "Hero": {},
+        "StoriesList": {
+            "default": {
+                "primary": {},
+                "items": {}
+            }
+        },
+        "Footer": {},
+        "AboutContent": {
+            "default": {
+                "primary": {}
+            }
+        },
+        "SendMessage": {
+            "default": {
+                "primary": {}
+            }
+        }
     }
-  }
 }

@@ -1,26 +1,26 @@
 {
-  "id": "send_message",
-  "type": "SharedSlice",
-  "name": "SendMessage",
-  "description": "SendMessage",
-  "variations": [
-    {
-      "id": "default",
-      "name": "Default",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "SendMessage",
-      "primary": {
-        "text": {
-          "type": "Text",
-          "config": {
-            "label": "text",
-            "placeholder": ""
-          }
+    "id": "send_message",
+    "type": "SharedSlice",
+    "name": "SendMessage",
+    "description": "SendMessage",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "sktwi1xtmkfgx8626",
+            "description": "SendMessage",
+            "primary": {
+                "text": {
+                    "type": "Text",
+                    "config": {
+                        "label": "text",
+                        "placeholder": ""
+                    }
+                }
+            },
+            "items": {},
+            "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
         }
-      },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-    }
-  ]
+    ]
 }

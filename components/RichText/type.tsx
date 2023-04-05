@@ -1,8 +1,8 @@
-import type { RichTextField } from "@prismicio/types";
+import type { RichTextField } from '@prismicio/types';
 
 type RichTextType = {
-  field: RichTextField;
-  className: string;
+    field: RichTextField;
+    className: string;
 };
 
 export type { RichTextType };

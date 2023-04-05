@@ -7,20 +7,13 @@ import Nav from './Nav';
 import SendMessage from './SendMessage';
 import StoriesList from './StoriesList';
 
-export {
-	AboutContent,
-	Footer,
-	Hero,
-	Nav,
-	SendMessage,
-	StoriesList,
-};
+export { AboutContent, Footer, Hero, Nav, SendMessage, StoriesList };
 
 export const components = {
-	about_content: AboutContent,
-	footer: Footer,
-	hero: Hero,
-	nav: Nav,
-	send_message: SendMessage,
-	stories_list: StoriesList,
+    about_content: AboutContent,
+    footer: Footer,
+    hero: Hero,
+    nav: Nav,
+    send_message: SendMessage,
+    stories_list: StoriesList,
 };

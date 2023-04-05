@@ -1,48 +1,48 @@
 {
-  "id": "stories_list",
-  "type": "SharedSlice",
-  "name": "StoriesList",
-  "description": "StoriesList",
-  "variations": [
-    {
-      "id": "default",
-      "name": "Default",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "StoriesList",
-      "primary": {},
-      "items": {
-        "storyimg": {
-          "type": "Image",
-          "config": {
-            "label": "StoryImg",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "title": {
-          "type": "Text",
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          }
-        },
-        "date": {
-          "type": "Text",
-          "config": {
-            "label": "Date",
-            "placeholder": ""
-          }
-        },
-        "description": {
-          "type": "Text",
-          "config": {
-            "label": "Description",
-            "placeholder": ""
-          }
+    "id": "stories_list",
+    "type": "SharedSlice",
+    "name": "StoriesList",
+    "description": "StoriesList",
+    "variations": [
+        {
+            "id": "default",
+            "name": "Default",
+            "docURL": "...",
+            "version": "sktwi1xtmkfgx8626",
+            "description": "StoriesList",
+            "primary": {},
+            "items": {
+                "storyimg": {
+                    "type": "Image",
+                    "config": {
+                        "label": "StoryImg",
+                        "constraint": {},
+                        "thumbnails": []
+                    }
+                },
+                "title": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Title",
+                        "placeholder": ""
+                    }
+                },
+                "date": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Date",
+                        "placeholder": ""
+                    }
+                },
+                "description": {
+                    "type": "Text",
+                    "config": {
+                        "label": "Description",
+                        "placeholder": ""
+                    }
+                }
+            },
+            "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
         }
-      },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-    }
-  ]
+    ]
 }
