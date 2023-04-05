@@ -17,24 +17,24 @@ const SendMessage = ({ slice }) => {
   return (
     <section>
       <form onSubmit={submitHandler}>
-        <div className="px-4 py-8 md:py-10 md:px-6 lg:py-12 text-gray-600">
+        <div className="container text-gray-600">
           <div className="flex flex-col gap-4 mx-auto w-full max-w-3xl">
             <Input
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-3"
+              className="input-contact"
               name="name"
               placeholder="Jane Doe"
               label="Name"
               required
             />
             <Input
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-3"
+              className="input-contact"
               name="email"
               placeholder="jane.doe@example.com"
               label="Email Address"
               required
             />
             <TextArea
-              className="resize-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-3"
+              className="resize-none input-contact"
               name="message"
               placeholder="Write your message here…"
               label="Message"

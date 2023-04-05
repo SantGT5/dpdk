@@ -8,7 +8,7 @@ import Image from "next/image";
  */
 const StoriesList = ({ slice }) => (
   <section>
-    <div className="px-4 py-8 md:py-10 md:px-6 lg:py-12">
+    <div className="container">
       <div className="mx-auto w-full max-w-5xl">
         <ul className="grid grid-cols-1 gap-16">
           {slice?.items?.map((item, i) => {

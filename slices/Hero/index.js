@@ -12,7 +12,7 @@ import Image from "next/image";
  */
 const Hero = ({ slice }) => (
   <section>
-    <div className="flex justify-center px-4 py-8 md:py-10 md:px-6 lg:py-12 ">
+    <div className="flex justify-center container">
       <div className="text-center grid max-w-lg grid-cols-1 justify-items-center gap-5">
         <div className="h-40 w-40 overflow-hidden rounded-full">
           {slice?.items?.map((item, i) => {
