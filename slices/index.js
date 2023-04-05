@@ -4,6 +4,7 @@ import AboutContent from './AboutContent';
 import Footer from './Footer';
 import Hero from './Hero';
 import Nav from './Nav';
+import SendMessage from './SendMessage';
 import StoriesList from './StoriesList';
 
 export {
@@ -11,6 +12,7 @@ export {
 	Footer,
 	Hero,
 	Nav,
+	SendMessage,
 	StoriesList,
 };
 
@@ -19,5 +21,6 @@ export const components = {
 	footer: Footer,
 	hero: Hero,
 	nav: Nav,
+	send_message: SendMessage,
 	stories_list: StoriesList,
 };

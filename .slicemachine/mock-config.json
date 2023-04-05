@@ -18,6 +18,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "SendMessage": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

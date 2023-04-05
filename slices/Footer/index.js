@@ -1,7 +1,7 @@
 import React from "react";
-import { PrismicRichText } from "@prismicio/react";
+import { RichText, Input } from "../../components";
 
-import { RichText } from "../../components";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 /**
  * @typedef {import("@prismicio/client").Content.FooterSlice} FooterSlice
@@ -10,20 +10,24 @@ import { RichText } from "../../components";
  */
 const Footer = ({ slice }) => (
   <section>
-    <div className="flex justify-center px-4 py-8 md:py-10 md:px-6 lg:py-12 ">
-      <div className="flex-col text-center">
-        <RichText className="text-4xl" field={slice.primary.title} />
+    <div className="px-4 py-8 md:py-10 md:px-6 lg:py-12 ">
+      <div className="text-center flex flex-col gap-4 mx-auto w-full max-w-xl">
+        <RichText className="text-4xl font-bold" field={slice.primary.title} />
         <RichText
           className="italic text-gray-600 py-5"
           field={slice.primary.description}
         />
-        <input
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-2.5 "
-          type="text"
-          id="roll"
-          name="roll"
-          required
-        />
+        <div className="flex justify-end items-center relative">
+          <div className="w-full">
+            <Input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full block p-3"
+              placeholder="jane.doe@example.com"
+              name="roll"
+              required
+            />
+          </div>
+          <HiOutlineArrowRight className="absolute mr-2 w-10" />
+        </div>
       </div>
     </div>
   </section>

@@ -16,7 +16,8 @@
     "@prismicio/slice-simulator-react": "^0.2.3",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
     "@prismicio/types": "^0.2.7",

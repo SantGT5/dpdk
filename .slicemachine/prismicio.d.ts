@@ -82,7 +82,7 @@ interface ContactDocumentData {
  * Slice for *ContactMePage → Slice Zone*
  *
  */
-type ContactDocumentDataSlicesSlice = NavSlice | HeroSlice | FooterSlice;
+type ContactDocumentDataSlicesSlice = NavSlice | HeroSlice | FooterSlice | SendMessageSlice;
 /**
  * ContactMePage document from Prismic
  *
@@ -363,6 +363,45 @@ type NavSliceVariation = NavSliceDefault;
  */
 export type NavSlice = prismicT.SharedSlice<"nav", NavSliceVariation>;
 /**
+ * Primary content in SendMessage → Primary
+ *
+ */
+interface SendMessageSliceDefaultPrimary {
+    /**
+     * text field in *SendMessage → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: send_message.primary.text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    text: prismicT.KeyTextField;
+}
+/**
+ * Default variation for SendMessage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `SendMessage`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SendMessageSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<SendMessageSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *SendMessage*
+ *
+ */
+type SendMessageSliceVariation = SendMessageSliceDefault;
+/**
+ * SendMessage Shared Slice
+ *
+ * - **API ID**: `send_message`
+ * - **Description**: `SendMessage`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SendMessageSlice = prismicT.SharedSlice<"send_message", SendMessageSliceVariation>;
+/**
  * Item in StoriesList → Items
  *
  */
@@ -436,6 +475,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutDocumentData, AboutDocumentDataSlicesSlice, AboutDocument, ArticlesDocumentData, ArticlesDocumentDataSlicesSlice, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, AllDocumentTypes, AboutContentSliceDefaultPrimary, AboutContentSliceDefault, AboutContentSliceVariation, AboutContentSlice, FooterSliceDefaultPrimary, FooterSliceDefault, FooterSliceVariation, FooterSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceVariation, HeroSlice, NavSliceDefaultPrimary, NavSliceDefaultItem, NavSliceDefault, NavSliceVariation, NavSlice, StoriesListSliceDefaultItem, StoriesListSliceDefault, StoriesListSliceVariation, StoriesListSlice };
+        export type { AboutDocumentData, AboutDocumentDataSlicesSlice, AboutDocument, ArticlesDocumentData, ArticlesDocumentDataSlicesSlice, ArticlesDocument, ContactDocumentData, ContactDocumentDataSlicesSlice, ContactDocument, AllDocumentTypes, AboutContentSliceDefaultPrimary, AboutContentSliceDefault, AboutContentSliceVariation, AboutContentSlice, FooterSliceDefaultPrimary, FooterSliceDefault, FooterSliceVariation, FooterSlice, HeroSliceDefaultPrimary, HeroSliceDefaultItem, HeroSliceDefault, HeroSliceVariation, HeroSlice, NavSliceDefaultPrimary, NavSliceDefaultItem, NavSliceDefault, NavSliceVariation, NavSlice, SendMessageSliceDefaultPrimary, SendMessageSliceDefault, SendMessageSliceVariation, SendMessageSlice, StoriesListSliceDefaultItem, StoriesListSliceDefault, StoriesListSliceVariation, StoriesListSlice };
     }
 }

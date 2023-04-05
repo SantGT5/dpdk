@@ -28,7 +28,7 @@ const Hero = ({ slice }) => (
             );
           })}
         </div>
-        <RichText className="text-4xl" field={slice.primary.title} />
+        <RichText className="text-4xl font-bold" field={slice.primary.title} />
         <RichText
           className="text-4xl italic text-gray-600"
           field={slice.primary.description}
